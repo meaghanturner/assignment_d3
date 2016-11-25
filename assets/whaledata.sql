@@ -43,15 +43,15 @@ CREATE TABLE `tbl_whales` (
 
 
 
-INSERT INTO `tbl_whales` VALUES(1, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(2, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(3, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(4, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(1, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(1, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(1, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(1, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
-INSERT INTO `tbl_whales` VALUES(1, 'What do you do in the morning?', 'Cant talk running late!!', 'Making my coffee', 'Go for a run','Q1','Q2','Q3' );
+INSERT INTO `tbl_whales` VALUES(1, 'Beluga Whale', '40-60', 'images/thumb1.jpeg' );
+INSERT INTO `tbl_whales` VALUES(2, 'Blue Whale', '70-90', 'images/thumb2.jpeg');
+INSERT INTO `tbl_whales` VALUES(3, 'Bowhead Whale','`100-200', 'images/thumb3.jpeg');
+INSERT INTO `tbl_whales` VALUES(4, 'Fin Whale', '60-100', 'images/thumb4.jpeg');
+INSERT INTO `tbl_whales` VALUES(5, 'Gray Whale', '50-70', 'images/thumb5.jpeg');
+INSERT INTO `tbl_whales` VALUES(6, 'Humpback Whale','40-100', 'images/thumb6.jpeg');
+INSERT INTO `tbl_whales` VALUES(7, 'Minke Whale', '30-50', 'images/thumb7.jpeg');
+INSERT INTO `tbl_whales` VALUES(8, 'Narwhal Whale', '40-60', 'images/thumb8.jpeg');
+INSERT INTO `tbl_whales` VALUES(9, 'Sperm Whale', '60-80', 'images/thumb9.jpeg');
 
 
 
