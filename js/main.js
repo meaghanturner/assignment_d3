@@ -5,6 +5,7 @@
 	console.log("SEAF Fired");
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var height = 525;
 	var width = 890;
 	var margin= {top:30, right:20, bottom: 30, left:50};
@@ -19,6 +20,9 @@
 
 >>>>>>> meaghan-branch-edits
 	
+=======
+
+>>>>>>> origin/meaghan-branch-edits
 	
 	var xAxis= d3.axisBottom()
 	.scale(xScale)
