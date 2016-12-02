@@ -8,9 +8,7 @@ $database = "whaledata";
 $server = mysql_connect($host, $username, $password);
 $connection = mysql_select_db($database, $server);
 
-    $myquery = "
-SELECT  `type`, `years`, `thumbs` FROM  `whales`
-";
+    $myquery = "SELECT  `whales_type`, `whales_years` FROM  `tbl_whales`";
     $query = mysql_query($myquery);
     
     if ( ! $query ) {

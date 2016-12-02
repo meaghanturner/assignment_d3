@@ -1,0 +1,55 @@
+[
+{
+	"type": "Beluga Whale",
+	"years": "40-60",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Blue Whale",
+	"years": "70-90",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Bowhead Whale",
+	"years": "100-200",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Fin Whale",
+	"years": "60-100",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Gray Whale",
+	"years": "50-70",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Humpback Whale",
+	"years": "40-100",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Minke Whale",
+	"years": "30-50",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Narwhal Whale",
+	"years": "40-60",
+	"image": "images/thumb.jpg",
+},
+
+{
+	"type": "Sperm Whale",
+	"years": "60-80",
+	"image": "images/thumb.jpg",
+}
+]
