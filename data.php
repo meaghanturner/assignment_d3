@@ -1,5 +1,9 @@
 <?php
 
+// error_reporting  =  E_ALL
+// display_errors = On
+
+
 $username = "root";
 $password = "root";
 $host = "localhost";
@@ -9,10 +13,10 @@ $server = mysql_connect($host, $username, $password);
 $connection = mysql_select_db($database, $server);
 
     $myquery = "SELECT  `whales_type`, `whales_years` FROM  `tbl_whales`";
-    $query = mysql_query($myquery);
+    $query = mysqli_query($myquery);
     
-    if ( ! $query ) {
-        echo mysql_error();
+    if ( ! $myquery ) {
+        echo mysqli_error();
         die;
     }
     
@@ -22,7 +26,8 @@ $connection = mysql_select_db($database, $server);
         $data[] = mysql_fetch_assoc($query);
     }
     
-    echo json_encode($data);     
+    echo json_enc
+    ode($data);     
      
     mysql_close($server);
 ?>
