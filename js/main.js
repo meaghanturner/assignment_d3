@@ -1,4 +1,4 @@
-// JavaScript Document
+/ JavaScript Document
 
 (function() {
 	"use strict";
@@ -19,11 +19,11 @@ function dataa(data) {
 	console.log(data);
 
 	
-<<<<<<< HEAD
 var height = 525;
 var width = 700;
 var margin= {top:30, right:20, bottom: 30, left:50};
 
+var 
 
 	d3.select('#scatterPlot')
 	.append('svg')
@@ -38,8 +38,3 @@ var margin= {top:30, right:20, bottom: 30, left:50};
 
 
 })();
-=======
-
-	
-})();
->>>>>>> master
