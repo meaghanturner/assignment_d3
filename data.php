@@ -1,8 +1,8 @@
 <?php
 
+
 // error_reporting  =  E_ALL
 // display_errors = On
-
 
 $username = "root";
 $password = "root";
@@ -18,4 +18,7 @@ while($r = mysqli_fetch_assoc($result)) {
     $rows[] = $r;
 }
 echo json_encode($rows);
+
+
+?>
 
