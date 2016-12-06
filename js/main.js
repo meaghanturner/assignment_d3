@@ -25,22 +25,43 @@
 function dataa(data) {
 	console.log(data);
 
-var w = 900; //"100%";
-var h = 300;
+var width = 900; //"100%";
+var height = 300;
 
-var x = d3.scaleLinear()
-      .domain([0, d3.max(data)]) //start and end point of data 
-      .range ([0, w]);
+var margin = {top: 40, right: 40, bottom: 40, left: 50};
 
+// var x = d3.scaleLinear()
+//       .domain([0, d3.max(data)]) //start and end point of data 
+//       .range ([0, w]);
+
+
+//marco code
+var xScale = d3.scaleLinear()
+            .range([0, width]);
+  
+  var yScale = d3.scaleLinear()
+            .range([height, 0]);
+          
+  var xAxis = d3.axisBottom()
+    .scale(xScale);
+
+  var yAxis = d3.axisLeft()
+    .scale(yScale)  
+ 
+
+
+//end of marc
 
 //Create SVG 
-var svg = d3.select('#scatterPlot')
+//var svg = 
+d3.select('#scatterPlot')
 	.append('svg')
-	.attr('width', w)
-	.attr('height', h)
+	.attr('width', width + margin.left + margin.right)
+	.attr('height', height + margin.top + margin.bottom)
+  .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")")   
   
 	.style('background', "#efefef");
-
 
 //create circles for scatter
 svg.selectAll('circle')
@@ -60,5 +81,24 @@ svg.selectAll('circle')
 
 }
 
+var svg = d3.select("svg");
 
+      svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + (height+margin.top) + ")")
+            .attr("class", "x axis")    
+            .call(xAxis);
+
+      svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+            .attr("class", "y axis")
+            .call(yAxis);
+                
+    svg.append("text")
+            .attr("transform", 
+        "translate(" + (( width + margin.left + margin.right)/2) + ", 50)")
+            .attr("text-anchor", "middle")  
+            .text("bar chart of awesomeness");      
 })();
+
+
+
