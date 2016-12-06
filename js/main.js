@@ -1,6 +1,6 @@
 
-//JavaScript Document
 
+//JavaScript Document
 
 (function() {
 	"use strict";
@@ -9,15 +9,10 @@
 	 var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+
      var data = this.responseText; //need to output it as a JSON file not as a string
      var data = JSON.parse(data);
      console.log(data);
-     // for (var i = data.length - 1; i >= 0; i--) {
-     // 	console.log(data[i])
-     // 	data[i];
-     // };
-     dataa(data);
-
     }
   };
   xhttp.open("GET", "data.php", true);
