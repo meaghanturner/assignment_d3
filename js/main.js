@@ -26,35 +26,36 @@ function dataa(data) {
 	console.log(data);
 
 var w = 900; //"100%";
-var h = 600;
+var h = 300;
 
 var x = d3.scaleLinear()
-.domain([0, d3.max(data)]) //start and end point of data 
-.range ([0, w]);
+      .domain([0, d3.max(data)]) //start and end point of data 
+      .range ([0, w]);
+
 
 //Create SVG 
 var svg = d3.select('#scatterPlot')
 	.append('svg')
 	.attr('width', w)
 	.attr('height', h)
+  
 	.style('background', "#efefef");
 
+
+//create circles for scatter
 svg.selectAll('circle')
 	.data(data)
 	.enter()
 	.append('circle')
-	.attr("cx",  function(d) {
-    //return Math.sqrt(h - d[1]);
-    return d.whales_type;
-  })
-  	.attr("cy",  function(d) {
-    //return Math.sqrt(h - d[1]);
-    return d.whales_years;
-  })
-  	.attr("r", function(d) {
-  	//return Math.sqrt(h - d[1]);
-  	return d.whales_years/3;
-	})
+	.attr("cx",  function(d) 
+    {return d.whales_type;})
+  
+  .attr("cy",  function(d) 
+    {return d.whales_years;})
+
+  .attr("r", function(d) 
+    {return d.whales_years/3;})
+
 	.style("fill", "#00aa88");
 
 }
