@@ -1,4 +1,6 @@
-// / JavaScript Document
+
+//JavaScript Document
+
 
 (function() {
 	"use strict";
@@ -24,7 +26,6 @@
 
 function dataa(data) {
 	console.log(data);
-
 var width = 900; //"100%";
 var height = 300;
 
@@ -47,8 +48,6 @@ var xScale = d3.scaleLinear()
 
   var yAxis = d3.axisLeft()
     .scale(yScale)  
- 
-
 
 //end of marc
 
@@ -99,6 +98,3 @@ var svg = d3.select("svg");
             .attr("text-anchor", "middle")  
             .text("bar chart of awesomeness");      
 })();
-
-
-
