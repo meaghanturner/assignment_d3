@@ -7,7 +7,9 @@
 body
 {
 	margin:0;
-	font-family:helvetica;
+	font-family:'Helvetica';
+	text-align: center;
+
 
 }
 
@@ -15,7 +17,7 @@ body
 {
 	/*position:relative;*/
 	text-align:center;	
-}
+}d
 
 /*---------------------TYPOGRAPHY---------------------*/
 
@@ -31,7 +33,6 @@ h1
 	height:100px;
 	font-size:7em;
 }
-
 .display 
 {
 	display:none;
@@ -57,10 +58,24 @@ h1
 #heroImage img
 {
 	width:100%;
+	max-height:450px;
 }
 
 /*---------------------NAVIGATION---------------------*/
 #mainNav 
 {
-	padding-top:50px;
+	background-color: #383838;
+}
+
+#mainNav ul li a
+{
+	color: white;
+}
+
+#mainNav ul li a:hover
+{
+	color: black;
+	background-color: #C6E5EA;
+	border-radius: 0;
+	
 }
