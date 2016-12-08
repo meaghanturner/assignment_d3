@@ -29,7 +29,6 @@ CREATE TABLE `tbl_whales` (
   `whales_id` smallint(4) unsigned NOT NULL AUTO_INCREMENT,
   `whales_type` varchar(30) NOT NULL,
   `whales_years` smallint(4) NOT NULL,
-  `whales_pos` smallint(4) NOT NULL,
   `whales_thumbs` varchar(30) NOT NULL,
   
 
@@ -45,15 +44,15 @@ CREATE TABLE `tbl_whales` (
 
 
 
-INSERT INTO `tbl_whales` VALUES(1, 'Minke Whale','40','0','images/thumb7.jpeg');
-INSERT INTO `tbl_whales` VALUES(2, 'Beluga Whale','50','20','images/thumb1.jpeg' );
-INSERT INTO `tbl_whales` VALUES(3, 'Narwhal Whale','50','40','images/thumb8.jpeg');
-INSERT INTO `tbl_whales` VALUES(4, 'Gray Whale','60','60','images/thumb5.jpeg');
-INSERT INTO `tbl_whales` VALUES(5, 'Blue Whale','65','80','images/thumb2.jpeg');
-INSERT INTO `tbl_whales` VALUES(6, 'Sperm Whale','70', '100','images/thumb9.jpeg');
-INSERT INTO `tbl_whales` VALUES(7, 'Fin Whale','80','120','images/thumb4.jpeg');
-INSERT INTO `tbl_whales` VALUES(8, 'Humpback Whale','85','140','images/thumb6.jpeg');
-INSERT INTO `tbl_whales` VALUES(9, 'Bowhead Whale','150','160','images/thumb3.jpeg');
+INSERT INTO `tbl_whales` VALUES(1, 'Minke Whale','40','images/minke.png');
+INSERT INTO `tbl_whales` VALUES(2, 'Beluga Whale','50','images/beluga.png' );
+INSERT INTO `tbl_whales` VALUES(3, 'Narwhal Whale','50','images/narwal.png');
+INSERT INTO `tbl_whales` VALUES(4, 'Gray Whale','60','images/grey.png');
+INSERT INTO `tbl_whales` VALUES(5, 'Blue Whale','80','images/blue.png');
+INSERT INTO `tbl_whales` VALUES(6, 'Sperm Whale','70','images/sperm.png');
+INSERT INTO `tbl_whales` VALUES(7, 'Fin Whale','80','images/fin.png');
+INSERT INTO `tbl_whales` VALUES(8, 'Humpback Whale','70','images/humpback.png');
+INSERT INTO `tbl_whales` VALUES(9, 'Bowhead Whale','150','images/bowhead.png');
 
 
 
