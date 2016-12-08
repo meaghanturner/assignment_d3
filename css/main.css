@@ -8,6 +8,7 @@ body
 {
 	margin:0;
 	font-family:helvetica;
+
 }
 
 #container
@@ -29,6 +30,11 @@ h1
 	bottom:0;
 	height:100px;
 	font-size:7em;
+}
+
+.display 
+{
+	display:none;
 }
 
 
@@ -53,4 +59,8 @@ h1
 	width:100%;
 }
 
-
+/*---------------------NAVIGATION---------------------*/
+#mainNav 
+{
+	padding-top:50px;
+}
