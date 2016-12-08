@@ -56,6 +56,7 @@ var mainChart = scatterChart.append('g')
 
 var xAxis = d3.axisBottom()
      .scale(xScale);
+     
 
   mainChart.append('g')
   .attr('transform', 'translate(0,' + h + ')')
