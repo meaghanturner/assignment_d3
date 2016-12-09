@@ -101,13 +101,13 @@ var xAxis = d3.axisBottom()
     .attr("y", -46)
     .attr("x", -200)
     .attr("transform", "rotate(-90)")
-    .text("Average Span Life");
+    .text("Average Years");
 
 
    g.append("text")
     .attr("class", "x label")
     .attr("x", 417)
-    .attr("y", 550)
+    .attr("y", 557)
     .text("Types of Whales");
 
 
