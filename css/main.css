@@ -13,9 +13,9 @@ body
 
 #container
 {
-	/*position:relative;*/
+	position:relative;
 	text-align:center;	
-	/*margin: 15px 20px 15px 20px;*/
+	
 }
 
 #logo
@@ -26,7 +26,7 @@ body
 	top:13%;
 	margin-left: auto;
 	margin-right: auto;
-	width:100%;
+	width:67%;
 }
 
 #scatterPlot
@@ -70,7 +70,7 @@ h1
 
 h2
 {
-	font-family:'Pacifico', cursive;
+	font-family: 'Oswald', sans-serif;
 	font-size:2em;
 	line-height:45px;
 	margin-bottom:25px;
@@ -83,49 +83,149 @@ h2
 
 p 
 {
-	margin: 20px 40px 20px 40px;
+	font-size: 25px;
+	line-height: 35px;
+}
+
+text{
+	font-size: 12px;
+}
+text.x.label, text.y.label {
+	font-size: 20px;
 }
 
 /*---------------------HERO IMAGE---------------------*/
 
-#heroImage
-{
-	width:100%;
-}
+
 
 .stretch
 {
 	width:100%;
-	/*height:100%;*/
+	height: 100%;
 }
 
 #heroImage img
 {
 	width:100%;
-	max-height:450px;
+	max-height:450px;  
+  	margin:0;
+    left: 0px; 
+    top: 10%; 
+    z-index: -1; 
 }
 
-/*---------------------NAVIGATION---------------------*/
-#mainNav 
-{
-	background-color:#9ed1d5;
-	width:100%;
-}
 
-#mainNav a
-{
-	font-family:'Pacifico', cursive;
-	color:white;
-	width:100%;
-	font-size:1.2em;
+/*------------------------------------NAVIGATIOLN------------------------*/
+.navbar-default .navbar-nav >li >a:hover{
+	color: #AEDCEF;
+}
+/*-------BIGGER SCREENS-----*/
+@media (min-width: 768px){
+.navbar-fixed-top {
+    top: 50px;
+    border-width: 0 0 1px;
 
 }
+.navbar .navbar-collapse {
+    text-align: center;
+    background-color:#454d5d!important;
+    position: absolute !important;
+    top: -5em;
+    width: 100%;
+    left: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff!important;
+}
 
-#mainNav a:hover
-{
-	color:black;
-	background-color:#ebeae5;
-	border-radius:0;	
+.navbar-default .navbar-nav>li>a:hover {
+    color: #AEDCEF  !important;
+}
+
+
+
+}
+/*-------SMALLER SCREENS---*/
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-toggle{
+border-color: transparent;
+
+
+}
+.navbar-default .navbar-toggle:focus{
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+   background-color:#454d5d;
+   z-index: 100000;
+}
+.navbar-default .navbar-toggle{
+  z-index: 10000;
+   background-color:transparent;
+
+}
+
+.navbar-header{
+  background-color:#454D5D;
+
+}
+.navbar{
+  margin-bottom: 0px;
+  background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar .navbar-nav{
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+.navbar .navbar-collapse{
+	text-align: center;
+   background-color:#454d5d;
+   position: relative;
+   top: -50px;
+
+}
+.navbar-default {
+  background-color: transparent ;
+  border-color: transparent ;
+}
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #ffffff;
+  }
+
+/*---------animate hambuger---------*/
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
 }
 
 /*---------------------BOOTSTRAP---------------------*/
@@ -133,37 +233,52 @@ p
 .row 
 {
 	margin-bottom: 25px;
+	margin-top: -2px;
 }
-
+@media (min-width: 1000px){
+.row{
+margin-top: 13px;
+}
+}
 .boxHelper
 {
 	padding-top: 5px;
-	/*padding-bottom: 5px;*/
-	/*background-color: #eee;
-	border: 1px solid #ddd;*/
+
 }
 
 /*---------------------backgrounds---------------------*/
 
 
-#overview
+#about, #overview
 {
-	margin-bottom: 20px;
-}
-
-#about, #facts, #overview
-{
-	color:white;
+	color:#323232;
 	line-height:19px;
-	background-color:#aedcef;
+	background-color:#eaeaea;
 	padding:35px 55px;
-	margin-top: 15px;
+	margin-top: -5px;
+	
 }
 
 #facts
 {
-	background-color: #e6ddd6;
+	line-height:19px;
+	background-color:#9ed1d5;
+	padding:35px 55px;
+	margin-top: -5px;
+	color:white;
+
 }
+@media (min-width: 1000px){
+#facts
+{
+
+	height:24em;
+
+}
+}
+
+
+
 
 #overview img 
 {
@@ -172,7 +287,7 @@ p
 
 .mainFooter
 {	
-	background-color:#9ed1d5;
+	background-color:#454d5d;
 	padding:45px;
 }
 
@@ -190,16 +305,16 @@ p
 #contact
 {
 	color:white;
-	font-size:1.2em;
-	font-weight:bolder;
+	font-size:16px;
 	margin-top:20px;
 	margin-bottom:20px;
+	line-height: 20px;
 }
 
 #upButton .button
 {
 	background-color:#67c5ec;
-    border:none;
+    border-radius: 10px;
     color:white;
     padding:15px 32px;
     margin:15px;
