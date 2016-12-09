@@ -8,16 +8,29 @@ body
 {
 	margin:0;
 	font-family:'Helvetica';
+	font-size:100%;
 	text-align: center;
-
-
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	background-color: #eee;
 }
 
 #container
 {
 	/*position:relative;*/
 	text-align:center;	
-}d
+	/*margin: 15px 20px 15px 20px;*/
+}
+
+#logo
+{
+position: absolute;
+left: 0;
+right:0;
+top:13%;
+margin-left: auto;
+margin-right: auto;
+width:100%;
+}
 
 /*---------------------TYPOGRAPHY---------------------*/
 
@@ -31,8 +44,17 @@ h1
 	right:0;
 	bottom:0;
 	height:100px;
-	font-size:7em;
+	font-size:5em;
 }
+
+h2
+{
+	font-family:'Pacifico', cursive;
+	font-size: 2em;
+	line-height: 30px;
+	margin-bottom: 25px;
+}
+
 .display 
 {
 	display:none;
@@ -64,18 +86,70 @@ h1
 /*---------------------NAVIGATION---------------------*/
 #mainNav 
 {
-	background-color: #383838;
+	background-color:#475c78;
+	width: 100%;
 }
 
-#mainNav ul li a
+#mainNav a
 {
-	color: white;
+	font-family: 'Pacifico', cursive;
+	color:white;
+	width:100%;
+	font-size: 1.2em;
+
 }
 
-#mainNav ul li a:hover
+#mainNav a:hover
 {
-	color: black;
-	background-color: #C6E5EA;
-	border-radius: 0;
-	
+	color:white;
+	background-color:#569DBB;
+	border-radius:0;	
+}
+
+/*---------------------BOOTSTRAP---------------------*/
+
+.boxHelper
+{
+
+}
+
+/*---------------------backgrounds---------------------*/
+#about
+{
+	color:white;
+	line-height:19px;
+	background-color:#aedcef;
+	padding:35px 55px;
+	margin-bottom:15px;
+}
+
+.mainFooter
+{
+	background-color:#1e3f61;
+	padding:45px;
+}
+
+.social ul li
+{
+	color:white;
+	display: inline;
+}
+
+.social img
+{
+	width: 45px;
+}
+
+.contact
+{
+	color:white;
+	font-size:1.2em;
+	font-weight:bolder;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.copyright
+{
+	font-size:0.6em;
+	color:white;
 }
