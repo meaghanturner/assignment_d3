@@ -2,16 +2,13 @@
 /* CSS Document */
 
 /*---------------------GLOBAL---------------------*/
-
-
 body
 {
 	margin:0;
 	font-family:'Helvetica';
 	font-size:100%;
-	text-align: center;
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	background-color: #eee;
+	text-align:center;
+	font-family:'Open Sans', Helvetica, sans-serif;
 }
 
 #container
@@ -23,31 +20,35 @@ body
 
 #logo
 {
-position: absolute;
-left: 0;
-right:0;
-top:13%;
-margin-left: auto;
-margin-right: auto;
-width:100%;
+	position:absolute;
+	left: 0;
+	right:0;
+	top:13%;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
 }
-#scatterPlot{
-	width: 100%;
+
+#scatterPlot
+{
+	width:100%;
 	height:800px;
 }
 
-div.tooltip{
+div.tooltip
+{
 	position: relative;
 	text-align: center;
-	width: 300px;
-	font: 12px sans-serif;
+	width:300px;
+	font:12px sans-serif;
 	padding:13px;
 	color:#000;
 	top:-40em;
-	}
+}
 
 
-#thumbnail img{
+#thumbnail img
+{
 	width:300px;
 }
 
@@ -70,9 +71,9 @@ h1
 h2
 {
 	font-family:'Pacifico', cursive;
-	font-size: 2em;
-	line-height: 30px;
-	margin-bottom: 25px;
+	font-size:2em;
+	line-height:45px;
+	margin-bottom:25px;
 }
 
 .display 
@@ -80,21 +81,22 @@ h2
 	display:none;
 }
 
+p 
+{
+	margin: 20px 40px 20px 40px;
+}
 
 /*---------------------HERO IMAGE---------------------*/
 
 #heroImage
 {
-	width:102%;
-	margin:-8px;
-	left:0px;
-	top:10px;
+	width:100%;
 }
 
 .stretch
 {
 	width:100%;
-	height:100%;
+	/*height:100%;*/
 }
 
 #heroImage img
@@ -106,61 +108,86 @@ h2
 /*---------------------NAVIGATION---------------------*/
 #mainNav 
 {
-	background-color:#475c78;
-	width: 100%;
+	background-color:#9ed1d5;
+	width:100%;
 }
 
 #mainNav a
 {
-	font-family: 'Pacifico', cursive;
+	font-family:'Pacifico', cursive;
 	color:white;
 	width:100%;
-	font-size: 1.2em;
+	font-size:1.2em;
 
 }
 
 #mainNav a:hover
 {
-	color:white;
-	background-color:#569DBB;
+	color:black;
+	background-color:#ebeae5;
 	border-radius:0;	
 }
 
 /*---------------------BOOTSTRAP---------------------*/
 
+.row 
+{
+	margin-bottom: 25px;
+}
+
 .boxHelper
 {
-
+	padding-top: 5px;
+	/*padding-bottom: 5px;*/
+	/*background-color: #eee;
+	border: 1px solid #ddd;*/
 }
 
 /*---------------------backgrounds---------------------*/
-#about
+
+
+#overview
+{
+	margin-bottom: 20px;
+}
+
+#about, #facts, #overview
 {
 	color:white;
 	line-height:19px;
 	background-color:#aedcef;
 	padding:35px 55px;
-	margin-bottom:15px;
+	margin-top: 15px;
+}
+
+#facts
+{
+	background-color: #e6ddd6;
+}
+
+#overview img 
+{
+	width: 100%;
 }
 
 .mainFooter
-{
-	background-color:#1e3f61;
+{	
+	background-color:#9ed1d5;
 	padding:45px;
 }
 
 .social ul li
 {
 	color:white;
-	display: inline;
+	display:inline;
 }
 
 .social img
 {
-	width: 45px;
+	width:45px;
 }
 
-.contact
+#contact
 {
 	color:white;
 	font-size:1.2em;
@@ -168,6 +195,27 @@ h2
 	margin-top:20px;
 	margin-bottom:20px;
 }
+
+#upButton .button
+{
+	background-color:#67c5ec;
+    border:none;
+    color:white;
+    padding:15px 32px;
+    margin:15px;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    font-size:16px;
+}
+
+#upButton .button:hover
+{
+	color:white;
+	text-decoration:none;
+	background-color:#09aef2;
+}
+
 .copyright
 {
 	font-size:0.6em;

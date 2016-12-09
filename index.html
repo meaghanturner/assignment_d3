@@ -1,89 +1,72 @@
-
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Life Spans of Whales</title>
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<script src="js/d3.min.js"></script>
-<script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<script src="js/d3.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
-
 <body>
-
-<div id="container">
-	<h1> The Whale Life</h1>
-		<figure id="heroImage">
-			<img src="images/hero.jpg" class="stretch" alt="ocean">
-		</figure>
-		<header>
-			<nav id="mainNav">
-				<h2 class="display"> Main Navigation </h2>
-					<ul class="nav nav-tabs nav-justified">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Info</a></li>
-					</ul>
-			</nav>
-		</header>
-	<section id="about">
-		<h2>About</h2>
-			<p>Whales are creatures of the open ocean; they feed, mate, give birth, suckle and raise their young at sea. So extreme is their adaptation to life underwater that they are unable to survive on land. -WIKIPEDIA</p>
-	</section>
-	<h2>Life Spans of Whales</h2>
-	<div id="scatterPlot">
-	
-	</div>
-
-<footer class= "social">
-
-		<ul>
-			<li><a href="#"><img src="./images/facebook.svg" alt="twitter"></a></li>
-			<li><a href="#"><img src="./images/instagram.svg" alt="facebook"></a></li>
-			<li><a href="#"><img src="./images/twitter.svg" alt="instagram"></a></li>
-		</ul>
-	
-	<div id="contact">contact info</div>
-	<p class="copyright">&copy; 2016 The Whale Life. All Rights Reserved.</p>
-</footer>
-</div>
->>>>>>> master
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-		
-    
-    
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-    <script src="js/d3.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-  </head>
-  <body>
+  <header id="home">
     <img src="images/whale_logo.svg" alt="The Whale Life Logo" id="logo">
-    <figure id="heroImage">
-      <img src="images/hero.jpg" class="stretch" alt="ocean">
-    </figure>
-    <header>
+      <figure id="heroImage">
+        <img src="images/hero.jpg" class="stretch" alt="ocean">
+      </figure>
+     
+<!-- MAIN NAV -->
       <nav id="mainNav">
         <h2 class="display"> Main Navigation </h2>
-          <ul class="nav nav-pills nav-justified">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Info</a></li>
-          </ul>
+            <ul class="nav nav-pills nav-justified">
+              <li><a href="#heroImage">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#facts">Facts</a></li>
+              <li><a href="#scatterPlot">Resources</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>  
       </nav>
-    </header>
+  </header>
   <div id="container">
-    <section id="about">
-      <h2 class="title">About this mammal</h2>
-        <p>They're creatures of the ocean; they feed, mate, give birth, suckle and raise their young at sea. So extreme is their adaptation to life underwater that they are unable to survive on land. -WIKIPEDIA</p>
-    </section>
+    <div class="row">
+      <div class="col-xs-12 col-md-4"> 
+        <div class="boxHelper">
+          <section id="about">
+            <h2 class="title"> Welcome,<br> so whales...?</h2>
+              <p>They're creatures of the ocean; they feed, mate, give birth, suckle and raise their young at sea.</p>
+              <p> This website was created to obivisuly tell you more about whales! They are amazing creatures. Read on to find out more...</p>
+          </section>
+        </div>
+      </div>
+       <div class="col-xs-12 col-md-4"> 
+        <div class="boxHelper">
+          <section id="facts">
+            <h2 class="title">Random Facts Friday</h2>
+              <p>Whales can't breathe through their mouths becuase the mouth is connected directly to the stomach!<br></p>
+                </section>
+          </div>
+        </div>
+         <div class="col-xs-12 col-md-4"> 
+        <div class="boxHelper">
+          <section id="overview">
+            <h2 class="title">Whale of the Week</h2>
+
+              <p>Here we give a basic illustration of a Baleen Whale.</p> <img src="images/whale-anatomny.png" alt="baleen whale anatomy">
+                </section>
+          </div>
+        </div>
+    </div>
+  </div>
+    
     <h2>Life Spans of Whales</h2>
     <div id="scatterPlot"></div>
+  </div>
+  <div id="upButton">
+    <a href="#home" class="button">Back to Top</a>
   </div>
   <footer class="mainFooter">
     <div class= "social">
@@ -92,7 +75,7 @@
         <li><a href="#"><img src="./images/instagram.svg" alt="facebook"></a></li>
         <li><a href="#"><img src="./images/twitter.svg" alt="instagram"></a></li>
       </ul>
-    <p class="contact">Toll Free <br>1-800-SAVE-THE-WHALES</p>
+    <p id="contact">Toll Free <br>1-800-SAVE-THE-WHALES</p>
     <p class="copyright">&copy; 2016 The Whale Life. All Rights Reserved.</p>
      </div>
   </footer>
